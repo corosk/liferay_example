@@ -1,0 +1,7 @@
+Bundle-SymbolicName: active_portal-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	active.exception,\
+	active.model,\
+	active.service,\
+	active.service.persistence

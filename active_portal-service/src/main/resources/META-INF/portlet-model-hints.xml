@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="active.model.Foo">
+		<field name="uuid" type="String" />
+		<field name="fooId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="field1" type="String" />
+		<field name="field2" type="boolean" />
+		<field name="field3" type="int" />
+		<field name="field4" type="Date" />
+		<field name="field5" type="String" />
+	</model>
+	<model name="active.portal.model.company_bookmark">
+		<field name="companyId" type="String" />
+		<field name="groupId" type="String" />
+		<field name="bookmark_id" type="String" />
+		<field name="bookmark_url" type="String" />
+		<field name="bookmark_title" type="String" />
+		<field name="userId" type="Long" />
+		<field name="content" type="String" />
+		<field name="create_date" type="Date" />
+		<field name="update_date" type="Date" />
+		<field name="is_delete" type="Boolean" />
+	</model>
+</model-hints>
