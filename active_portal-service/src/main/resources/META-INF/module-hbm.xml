@@ -3,7 +3,7 @@
 
 <hibernate-mapping default-lazy="false" auto-import="false">
 	<import class="active.model.Foo" />
-	<import class="active.portal.model.company_bookmark" />
+	<import class="active.portal.model.companyBookmark" />
 	<class name="active.model.impl.FooImpl" table="FOO_Foo">
 		<id name="fooId" type="long">
 			<generator class="assigned" />
@@ -21,18 +21,18 @@
 		<property name="field4" type="org.hibernate.type.TimestampType" />
 		<property name="field5" type="com.liferay.portal.dao.orm.hibernate.StringType" />
 	</class>
-	<class name="active.portal.model.impl.company_bookmarkImpl" table="active_company_bookmark">
-		<id name="bookmark_id" type="java.lang.String">
+	<class name="active.portal.model.impl.companyBookmarkImpl" table="active_companyBookmark">
+		<id name="bookmarkId" type="java.lang.String">
 			<generator class="assigned" />
 		</id>
 		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
 		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
-		<property name="bookmark_url" type="com.liferay.portal.dao.orm.hibernate.StringType" />
-		<property name="bookmark_title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="bookmarkUrl" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="bookmarkTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
 		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
 		<property name="content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
-		<property name="create_date" type="org.hibernate.type.TimestampType" />
-		<property name="update_date" type="org.hibernate.type.TimestampType" />
-		<property name="is_delete" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="updateDate" type="org.hibernate.type.TimestampType" />
+		<property name="isDelete" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
 	</class>
 </hibernate-mapping>

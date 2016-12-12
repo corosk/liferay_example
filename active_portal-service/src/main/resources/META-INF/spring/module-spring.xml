@@ -4,7 +4,7 @@
 	<bean class="active.service.impl.FooLocalServiceImpl" id="active.service.FooLocalService" />
 	<bean class="active.service.impl.FooServiceImpl" id="active.service.FooService" />
 	<bean class="active.service.persistence.impl.FooPersistenceImpl" id="active.service.persistence.FooPersistence" parent="basePersistence" />
-	<bean class="active.portal.service.impl.company_bookmarkLocalServiceImpl" id="active.portal.service.company_bookmarkLocalService" />
-	<bean class="active.portal.service.impl.company_bookmarkServiceImpl" id="active.portal.service.company_bookmarkService" />
-	<bean class="active.portal.service.persistence.impl.company_bookmarkPersistenceImpl" id="active.portal.service.persistence.company_bookmarkPersistence" parent="basePersistence" />
+	<bean class="active.portal.service.impl.companyBookmarkLocalServiceImpl" id="active.portal.service.companyBookmarkLocalService" />
+	<bean class="active.portal.service.impl.companyBookmarkServiceImpl" id="active.portal.service.companyBookmarkService" />
+	<bean class="active.portal.service.persistence.impl.companyBookmarkPersistenceImpl" id="active.portal.service.persistence.companyBookmarkPersistence" parent="basePersistence" />
 </beans>
