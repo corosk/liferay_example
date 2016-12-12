@@ -4,39 +4,39 @@
 <service-builder package-path="active.portal">
 	<namespace>active</namespace>
 	<!-- ブックマーク情報 -->
-	<entity local-service="true" name="company_bookmark" remote-service="true">
+	<entity local-service="true" name="companyBookmark" remote-service="true">
 		<!-- companyID -->
 		<column name="companyId" type="String"/>
 		<!-- groupId -->
 		<column name="groupId" type="String"/>
 		<!-- ブックマークID -->
-		<column name="bookmark_id" primary="true" type="String" />
+		<column name="bookmarkId" primary="true" type="String" />
 		<!--ブックマークURL -->
-		<column name="bookmark_url" type="String" />
+		<column name="bookmarkUrl" type="String" />
 		<!-- ブックマークタイトル -->
-		<column name="bookmark_title" type="String" />
+		<column name="bookmarkTitle" type="String" />
 		<!-- 登録ユーザー -->
 		<column name="userId" type="Long" />
 		<!-- 記事内容 -->
 		<column name="content" type="String" />
 		<!-- 作成日 -->
-		<column name="create_date" type="Date" />
+		<column name="createDate" type="Date" />
 		<!-- 更新日 -->
-		<column name="update_date" type="Date" />
+		<column name="updateDate" type="Date" />
 		<!-- 削除 -->
-		<column name="is_delete" type="Boolean" />
+		<column name="isDelete" type="Boolean" />
 		
 		<!-- finder -->
 		<finder name="bookmarkId" return-type="Collection">
-			<finder-column name="bookmark_id" />
+			<finder-column name="bookmarkId" />
 		</finder>
 		
 		<finder name="bookmarkUrl" return-type="Collection">
-			<finder-column name="bookmark_url" />
+			<finder-column name="bookmarkUrl" />
 		</finder>
 
 		<finder name="bookmarTitle" return-type="Collection">
-			<finder-column name="bookmark_title" />
+			<finder-column name="bookmarkTitle" />
 		</finder>
 		
 		<finder name="bookmarUserId" return-type="Collection">
